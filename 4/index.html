@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+ <meta charset="UTF-8">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
+ <title>Food Delivery Website</title>
+ <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ <div class="container">
+ <h1>Food Delivery</h1>
+ <!-- Restaurant List -->
+ <div id="restaurantList"></div>
+ <!-- Selected Restaurant Food Items -->
+ <div id="foodItems" style="display: none;">
+ <h2 id="restaurantName"></h2>
+ <div id="menu"></div>
+ <button id="viewCartBtn" onclick="viewCart()">View Cart</button>
+ </div>
+ <!-- Cart -->
+ <div id="cart" style="display: none;">
+ <h2>Cart</h2>
+ <div id="cartItems"></div>
+ <input type="text" id="userName" placeholder="Enter your name">
+ <button onclick="placeOrder()">Place Order</button>
+ </div>
+ </div>
+ <script src="app.js"></script>
+</body>
+</html>
